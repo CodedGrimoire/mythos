@@ -1,0 +1,149 @@
+export default function Home() {
+  return (
+    <div className="relative flex w-full min-h-screen flex-col bg-slate-900 overflow-x-hidden font-serif">
+      <div className="layout-container flex h-full grow flex-col">
+        {/* Header */}
+        <header className="flex items-center justify-between whitespace-nowrap border-b border-slate-700 px-10 py-3">
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-4 text-white">
+              <div className="w-4 h-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h2 className="text-white text-lg font-bold">Mythos</h2>
+            </div>
+            <nav className="flex items-center gap-9">
+              <a href="#" className="text-white text-sm font-medium">Home</a>
+              <a href="#" className="text-white text-sm font-medium">Catalogues</a>
+              <a href="#" className="text-white text-sm font-medium">Map</a>
+              <a href="#" className="text-white text-sm font-medium">Stories</a>
+            </nav>
+          </div>
+          <div className="flex flex-1 justify-end gap-8">
+            <div className="flex min-w-40 h-10 max-w-64">
+              <div className="flex w-full items-stretch rounded-xl h-full">
+                <div className="text-slate-400 flex bg-slate-700 items-center justify-center pl-4 rounded-l-xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  className="flex w-full min-w-0 flex-1 rounded-xl text-white bg-slate-700 h-full placeholder:text-slate-400 px-4 rounded-l-none pl-2 text-base border-0 focus:ring-0 focus:outline-none"
+                />
+              </div>
+            </div>
+            <button className="flex cursor-pointer items-center justify-center rounded-xl h-10 bg-slate-700 text-white gap-2 text-sm font-bold min-w-0 px-2.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,177.57-51.77-32.35a8,8,0,0,0-8.48,0L72,209.57V48H184Z"/>
+              </svg>
+            </button>
+            <div
+              className="bg-gray-400 rounded-full w-10 h-10"
+              style={{ 
+                backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAECLUZ_7PbtgSUsBIWxaROTTFj7FlRS-mLwtgsq9EzD6mjgIOSZjLh-NBvuYxEWDH8ls9ziRWNbw_swnWFewacVOKQYdNhFQWOww831DdNMXarkjxjtO9eqHgNOQ7PoeBwMof63SHbEweCsGnwnMWdVya5unrGLKGdSRBD0sJwhaXgpxeXZRX9mgjbH5luSo4VwV8TlA8tbNS61USXqV1WtfZ_ZQfd6hMubObshI5bWBAvV8ElxF_8rZT6AbUz5rEIePwqeZJxorK3")', 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center' 
+              }}
+            />
+          </div>
+        </header>
+
+        <div className="px-40 flex flex-1 justify-center py-5">
+          <div className="flex flex-col max-w-4xl flex-1">
+            {/* Hero Section */}
+            <div className="p-4">
+              <div
+                className="flex min-h-96 flex-col gap-6 bg-cover bg-center rounded-xl items-center justify-center p-8"
+                style={{
+                  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9yX56k-MMlZXrHVGo3Pn4bSL9KQVrTsmHdewn-V0a2AP0MfSuaJJkIM9eYWXBaIISQF4UFUGlfvIBsRcwB_U2qeCZkQL4G48wqLfakcCko0YtX0m_blz2iVJN1DO2fVD_mYbvsror9RjTUznigePy3RYrPgLcldbIs9zdqUW_iSY2FrTThzznp9xGOgZaLKyNCo7bojx9Nbagvd7Z6JSN3ENqxynL9mAIiVE2t9yT3dGTHQUjbdlhfxAVFRC-6lhIfWVf1NFW2hrt")'
+                }}
+              >
+                <div className="flex flex-col gap-4 text-center">
+                  <h1 className="text-white text-5xl font-black">
+                    Explore the World of Myths
+                  </h1>
+                  <p className="text-white text-base">
+                    Dive into the rich tapestry of ancient tales and legends from around the globe. Discover the heroes, gods, and creatures that have shaped cultures and inspired generations.
+                  </p>
+                </div>
+                <button className="flex cursor-pointer items-center justify-center rounded-xl h-12 px-6 bg-blue-600 text-white text-base font-bold hover:bg-blue-700">
+                  Start Exploring
+                </button>
+              </div>
+            </div>
+
+            {/* Catalogues Section */}
+            <h2 className="text-white text-2xl font-bold px-4 pb-3 pt-5">Catalogues</h2>
+            <div className="grid grid-cols-3 gap-6 p-4">
+              {[
+                { name: 'Greek Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAqy5Bx0sozcrGb4wbWQOqsSqwwebhIu5M1sp20tRFyJKnr73lxVvbRzESfO_MbUYkNv9IPahqYl1fojfNBQLyAoGVOW46yu_oWvYoU46FogR2Y5tAB4gTO29VkLlCDkjopRLKIFfv5Gzm-55Ogsn2Ww3_kidoR61mnUVgPIgG88FHnsYCsIgFiUJlHGEnoNNTyI2P1eVopzPcma4Sj_FUnS_E-cvw7iibdXfamXi_VlacA4g2CNhVDN8a5yE7iSJknTKd6wYbDsqdx' },
+                { name: 'Norse Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBzpRKyrDn9XlpugDYthe82n1ATw0jfAbpv0gMbpXEqlu0EAkxP-dGRB5DvIQTvWgzZPczc68HZ4qtiLWLphNOxpN_FjWlaHbDE3uIvWVvVV57XzEuaod6w1-R9-DsvHYC0myQqX4TY6Bt9L-gdB56G_Iepz3lMpCzKXSc2_pNwOfd_ehaBb7PSnIN7EM-ITKZ33XkyQuAglBHNhAeejS05G_-EbtG0PIZzKr1HJA39nOfYVPaVB-YjDqadTIkAKHIvjkIl-x2X5pR9' },
+                { name: 'Egyptian Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAKbkDAe8SDS5EIo7PyP2bp0DVfZePv43-MlsfiMRItz-wSXSqCC-BeQZJQ4QJuF_5TuxCJ9m2YvnU4tJQS2fVy9owKF99sRfqIJsxl6uzX_cfU4Ob-vj61v340a_58MwgC28x9NHJAxCBlX8CLE9prc_Oj-5eJPPTWnBVd67ZbQc654cbpDrEX2sadj5-3Yp21xCAbmSFRn5gH-NiU6DiEVGYYBY8_OyYv9ZRrlrjeDJcMGXHoIYwyQSQwaCnHvdN2G11gyr2Olv4Q' },
+                { name: 'Celtic Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDy2KEzdGv4jFeJKsnJfMHKWyTrrAtuT0b6QVMRS6b18soDEg3RjHp7kqNMG0XPI2sNBE4ZZAwlaX1_xbl2WLeVclLThVZ6df6LXS0P_0_TZDNxDNjonhKQtBy2wEss0APWDbuA1q-_LDFpdgo5BvioPn4s7SvZ2b47CyKymeHPVDxwupoLG7AMbH92H4Yposu9t9GDIb0fYs3x_zjJP0BP6udwu0fmKB9HVFPpG7bR5Hyp11MI0gwIsfKxp1rdbgmodCcpDmfq5pDl' },
+                { name: 'Roman Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDqoWjGIwHGR__OTnXW2StKtONBDsEWNhIqQcq3Ta1uc0BWD6wriDMfhql8XtIl2TD0nmEJw53QUl5THpPG89zQ4bw2SazC8xKZ0kuG7-iSnyD0Ys-gCuJFxcSOksZbJcWeGc7IjBJLGycgJ7gQOwNVvB7Jpov3WSI18XhLcXC1s5VBg82wyzdDDgoii6zbSHRVomJ3ZYxlnP_c30CAkf4-irfy4MhLTR31bjaNhtSzmT2ddC6CVMGtau0F1cBFI3uP8A1wGmoor1UI' },
+                { name: 'Mesopotamian Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuALliPsIZN4YqnlR_1-aHPBnHPxN4Pq5o9kPQzArtbWroTAdG2nCX9t4Mivbgujmsrc29QZdFDk7myw_WpNdG7bIEC-SMxdgMdlRa5uvN7LkNd2T9oMf6ZB63r_mMWcftRyzTWoORb0lUI1MsOCEhpmG4P67a_QydklpiPXWDnAKvgJnen0gpL1YdFxpJOaPHyKCvN7Si7Aal_Cs15QE6rT4WKvd5pS3AmaSFIMc_Q_U1za46vaj7AwMW90MEipSS7v89T62opOUDT1' }
+              ].map((item, index) => (
+                <div key={index} className="flex flex-col gap-3 cursor-pointer hover:scale-105 transition-transform">
+                  <div 
+                    className="w-full aspect-square bg-cover bg-center rounded-xl"
+                    style={{ backgroundImage: `url("${item.img}")` }}
+                  />
+                  <p className="text-white text-base font-medium">{item.name}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Map Section */}
+            <h2 className="text-white text-2xl font-bold px-4 pb-3 pt-5">Map</h2>
+            <div className="flex flex-col">
+              <div className="px-4 py-3">
+                <div 
+                  className="bg-cover bg-center flex min-h-80 flex-col justify-between px-8 py-6 rounded-xl"
+                  style={{ backgroundImage: 'url("")' }}
+                >
+                  <div className="flex min-w-40 h-12">
+                    <div className="flex w-full items-stretch rounded-xl h-full">
+                      <div className="text-slate-400 flex bg-slate-800 items-center justify-center pl-4 rounded-l-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                          <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>
+                        </svg>
+                      </div>
+                      <input
+                        placeholder="Search for a mythology"
+                        className="flex w-full min-w-0 flex-1 rounded-xl text-white bg-slate-800 h-full placeholder:text-slate-400 px-4 rounded-l-none pl-2 text-base border-0 focus:ring-0 focus:outline-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-end gap-3">
+                    <div className="flex flex-col gap-1">
+                      <button className="flex w-10 h-10 items-center justify-center rounded-t-xl bg-slate-800 hover:bg-slate-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
+                          <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/>
+                        </svg>
+                      </button>
+                      <button className="flex w-10 h-10 items-center justify-center rounded-b-xl bg-slate-800 hover:bg-slate-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
+                          <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <button className="flex w-10 h-10 items-center justify-center rounded-xl bg-slate-800 hover:bg-slate-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
+                        <path d="M229.33,98.21,53.41,33l-.16-.05A16,16,0,0,0,32.9,53.25a1,1,0,0,0,.05.16L98.21,229.33A15.77,15.77,0,0,0,113.28,240h.3a15.77,15.77,0,0,0,15-11.29l23.56-76.56,76.56-23.56a16,16,0,0,0,.62-30.38ZM224,113.3l-76.56,23.56a16,16,0,0,0-10.58,10.58L113.3,224h0l-.06-.17L48,48l175.82,65.22.16.06Z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
