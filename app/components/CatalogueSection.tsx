@@ -9,10 +9,7 @@ export default function CatalogueSection() {
     { name: 'Mesopotamian Mythology', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuALliPsIZN4YqnlR_1-aHPBnHPxN4Pq5o9kPQzArtbWroTAdG2nCX9t4Mivbgujmsrc29QZdFDk7myw_WpNdG7bIEC-SMxdgMdlRa5uvN7LkNd2T9oMf6ZB63r_mMWcftRyzTWoORb0lUI1MsOCEhpmG4P67a_QydklpiPXWDnAKvgJnen0gpL1YdFxpJOaPHyKCvN7Si7Aal_Cs15QE6rT4WKvd5pS3AmaSFIMc_Q_U1za46vaj7AwMW90MEipSS7v89T62opOUDT1' }
   ];
 
-interface Catalogue {
-    name: string;
-    img: string;
-}
+
 
 const handleCatalogueClick = (catalogueName: string): void => {
     // Convert mythology name to URL format for existing HTML pages
